@@ -1,7 +1,7 @@
 **Comandos para manipulação de contas**
 
-Comandos usados para manipulação de conta de usuários e grupos em sistemas GNU/Linux. Entre os assuntos descritos aqui estão adicionar usuários ao sistema, adicionar grupos, incluir usuários em grupos existentes, etc.
-Os estilos não têm praticamente nada de HTML, eles têm o formato de ‘propriedade: valor’ e a maioria das propriedades pode ser aplicada à maioria das tags HTML.
+  ***Comandos usados para manipulação de conta de usuários e grupos em sistemas GNU/Linux. Entre os assuntos descritos aqui estão adicionar usuários ao sistema, adicionar grupos, incluir usuários em grupos existentes, etc.
+Os estilos não têm praticamente nada de HTML, eles têm o formato de ‘propriedade: valor’ e a maioria das propriedades pode ser aplicada à maioria das tags HTML.***
 
 **Conteúdo:**
 -adduser
@@ -20,8 +20,8 @@ Os estilos não têm praticamente nada de HTML, eles têm o formato de ‘propri
 
 **adduser**
 
-Adiciona um usuário ou grupo no sistema. Por padrão, quando um novo usuário é adicionado, é criado um grupo com o mesmo nome do usuário. Opcionalmente o adduser também pode ser usado para adicionar um usuário a um grupo
-Será criado um diretório home com o nome do usuário.  e este receberá uma identificação. A identificação do usuário (UID) escolhida será a primeira disponível no sistema especificada de acordo com a faixa de UIDS de usuários permitidas no arquivo de configuração /etc/adduser.conf. Este é o arquivo que contém os padrões para a criação de novos usuários no sistema.
+  <sub>Adiciona um usuário ou grupo no sistema. Por padrão, quando um novo usuário é adicionado, é criado um grupo com o mesmo nome do usuário. Opcionalmente o adduser também pode ser usado para adicionar um usuário a um grupo
+Será criado um diretório home com o nome do usuário.  e este receberá uma identificação. A identificação do usuário (UID) escolhida será a primeira disponível no sistema especificada de acordo com a faixa de UIDS de usuários permitidas no arquivo de configuração /etc/adduser.conf. Este é o arquivo que contém os padrões para a criação de novos usuários no sistema.</sub>
 
 adduser [opções] [usuário/grupo]
 
@@ -44,14 +44,14 @@ Cria um novo usuário com a identificação [num] ao invés de procurar o próxi
 
 **addgroup**
 
-Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas do “adduser”.
+  <sub>Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas do “adduser”.</sub>
 
 addgroup [usuário/grupo] [opções]
 
 
 **passwd**
 
-Modifica a parametros e senha de usuário. Um usuário somente pode alterar a senha de sua conta, mas o superusuário (root) pode alterar a senha de qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos de grupos também podem alterar a senha do grupo com este comando.
+  <sub>Modifica a parametros e senha de usuário. Um usuário somente pode alterar a senha de sua conta, mas o superusuário (root) pode alterar a senha de qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos de grupos também podem alterar a senha do grupo com este comando.</sub>
 
 passwd [usuário] [opções]
 
@@ -87,7 +87,7 @@ Desbloqueia a conta de um usuário bloqueada com a opção -l.
 
 **gpasswd**
 
-Modifica parametros e senha de grupo. Um usuário somente pode alterar a senha de seu grupo, mas o superusuário (root) pode alterar a senha de qualquer grupo de usuário, inclusive definir o administrador do grupo.
+  <sub>Modifica parametros e senha de grupo. Um usuário somente pode alterar a senha de seu grupo, mas o superusuário (root) pode alterar a senha de qualquer grupo de usuário, inclusive definir o administrador do grupo.</sub>
 
 gpasswd [opções] [usuario] [grupo]
 
@@ -109,7 +109,7 @@ Apaga o usuário do gurpo especificado.
 
 **newgrp**
 
-Altera a identificação de grupo do usuário. Para retornar a identificação anterior, digite exit e tecle Enter. Para executar um comando com outra identificação de grupo de usuário, use o comando “sg”.
+  <sub>Altera a identificação de grupo do usuário. Para retornar a identificação anterior, digite exit e tecle Enter. Para executar um comando com outra identificação de grupo de usuário, use o comando “sg”.</sub>
 
 newgrp - [grupo]
 
@@ -121,8 +121,8 @@ grupo
 Nome do grupo ou número do grupo que será incluído.
 
 
-userdel
-Apaga um usuário do sistema. Quando é usado, este comando apaga todos os dados da conta especificado dos arquivos de contas do sistema.
+**userdel**
+  <sub>Apaga um usuário do sistema. Quando é usado, este comando apaga todos os dados da conta especificado dos arquivos de contas do sistema.</sub>
 
 userdel [-r] [usuário]
 
@@ -134,7 +134,7 @@ Apaga também o diretório HOME do usuário.
 
 **groupdel**
 
-Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados do grupo especificado dos arquivos de contas do sistema.
+  Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados do grupo especificado dos arquivos de contas do sistema.</sub>
 
 groupdel [grupo]
 
@@ -143,7 +143,7 @@ Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado 
 
 **lastlog**
 
-Mostra o último login dos usuários cadastrados no sistema. É mostrado o nome usado no login, o terminal onde ocorreu a conexão e a hora da última conexão. Estes dados são obtidos através da pesquisa e formatação do arquivo /var/log/lastlog. Caso o usuário não tenha feito login, é mostrada a mensagem ** Never logged in **.
+  <sub>Mostra o último login dos usuários cadastrados no sistema. É mostrado o nome usado no login, o terminal onde ocorreu a conexão e a hora da última conexão. Estes dados são obtidos através da pesquisa e formatação do arquivo /var/log/lastlog. Caso o usuário não tenha feito login, é mostrada a mensagem ** Never logged in.</sub>
 
 lastlog [opções]
 
@@ -160,7 +160,7 @@ Mostra somente detalhes sobre o usuário [nome].
 
 **last**
 
-Mostra uma listagem de entrada e saída de usuários no sistema. São mostrados os seguintes campos na listagem:
+  Mostra uma listagem de entrada e saída de usuários no sistema. São mostrados os seguintes campos na listagem:</sub>
 
 Nome do usuário
 
@@ -179,19 +179,19 @@ opções, -n [num]
 
 **logname**
 
-Mostra seu login (username).
+  <sub>Mostra seu login (username).</sub>
 
 logname
 
 
 **users**
 
-Mostra os nomes de usuários usando atualmente o sistema. Os nomes de usuários são mostrados através de espaços sem detalhes adicionais, para ver maiores detalhes sobre os usuários
+  <sub>Mostra os nomes de usuários usando atualmente o sistema. Os nomes de usuários são mostrados através de espaços sem detalhes adicionais, para ver maiores detalhes sobre os usuários.</sub>
 
 
 **groups**
 
-Mostra os grupos que o usuário pertence.
+  <sub>Mostra os grupos que o usuário pertence.</sub>
 
 
 referência: https://www.guiafoca.org/guiaonline/iniciante/ch10.html
