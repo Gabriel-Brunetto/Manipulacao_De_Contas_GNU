@@ -3,7 +3,7 @@
 Comandos usados para manipulação de conta de usuários e grupos em sistemas GNU/Linux. Entre os assuntos descritos aqui estão adicionar usuários ao sistema, adicionar grupos, incluir usuários em grupos existentes, etc.
 Os estilos não têm praticamente nada de HTML, eles têm o formato de ‘propriedade: valor’ e a maioria das propriedades pode ser aplicada à maioria das tags HTML.
 
-Conteúdo:
+**Conteúdo:**
 -adduser
 -addgroup
 -passwd
@@ -18,7 +18,7 @@ Conteúdo:
 -groups
 
 
-adduser
+**adduser**
 
 Adiciona um usuário ou grupo no sistema. Por padrão, quando um novo usuário é adicionado, é criado um grupo com o mesmo nome do usuário. Opcionalmente o adduser também pode ser usado para adicionar um usuário a um grupo
 Será criado um diretório home com o nome do usuário.  e este receberá uma identificação. A identificação do usuário (UID) escolhida será a primeira disponível no sistema especificada de acordo com a faixa de UIDS de usuários permitidas no arquivo de configuração /etc/adduser.conf. Este é o arquivo que contém os padrões para a criação de novos usuários no sistema.
@@ -42,14 +42,14 @@ Cria um novo grupo ao invés de um novo usuário. A criação de grupos também 
 -uid [num]
 Cria um novo usuário com a identificação [num] ao invés de procurar o próximo UID disponível.
 
-addgroup
+**addgroup**
 
 Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas do “adduser”.
 
 addgroup [usuário/grupo] [opções]
 
 
-passwd
+**passwd**
 
 Modifica a parametros e senha de usuário. Um usuário somente pode alterar a senha de sua conta, mas o superusuário (root) pode alterar a senha de qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos de grupos também podem alterar a senha do grupo com este comando.
 
@@ -85,7 +85,7 @@ Bloqueia a conta do usuário [nome]. Deve ser usada pelo root. O bloqueio da con
 Desbloqueia a conta de um usuário bloqueada com a opção -l.
 
 
-gpasswd
+**gpasswd**
 
 Modifica parametros e senha de grupo. Um usuário somente pode alterar a senha de seu grupo, mas o superusuário (root) pode alterar a senha de qualquer grupo de usuário, inclusive definir o administrador do grupo.
 
@@ -107,7 +107,7 @@ Adiciona o usuário no grupo especificado.
 -d usuario grupo
 Apaga o usuário do gurpo especificado.
 
-newgrp
+**newgrp**
 
 Altera a identificação de grupo do usuário. Para retornar a identificação anterior, digite exit e tecle Enter. Para executar um comando com outra identificação de grupo de usuário, use o comando “sg”.
 
@@ -132,7 +132,8 @@ Onde:
 Apaga também o diretório HOME do usuário.
 
 
-groupdel
+**groupdel**
+
 Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados do grupo especificado dos arquivos de contas do sistema.
 
 groupdel [grupo]
@@ -140,7 +141,8 @@ groupdel [grupo]
 Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado através do comando find.
 
 
-lastlog
+**lastlog**
+
 Mostra o último login dos usuários cadastrados no sistema. É mostrado o nome usado no login, o terminal onde ocorreu a conexão e a hora da última conexão. Estes dados são obtidos através da pesquisa e formatação do arquivo /var/log/lastlog. Caso o usuário não tenha feito login, é mostrada a mensagem ** Never logged in **.
 
 lastlog [opções]
@@ -156,7 +158,8 @@ Mostra somente os usuários que se conectaram antes de [dias].
 -u [nome]
 Mostra somente detalhes sobre o usuário [nome].
 
-last
+**last**
+
 Mostra uma listagem de entrada e saída de usuários no sistema. São mostrados os seguintes campos na listagem:
 
 Nome do usuário
@@ -174,17 +177,20 @@ Onde:
 opções, -n [num]
 
 
-logname
+**logname**
+
 Mostra seu login (username).
 
 logname
 
 
-users
+**users**
+
 Mostra os nomes de usuários usando atualmente o sistema. Os nomes de usuários são mostrados através de espaços sem detalhes adicionais, para ver maiores detalhes sobre os usuários
 
 
-groups
+**groups**
+
 Mostra os grupos que o usuário pertence.
 
 
