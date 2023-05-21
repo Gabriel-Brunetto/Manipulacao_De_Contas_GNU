@@ -21,7 +21,7 @@ Os estilos não têm praticamente nada de HTML, eles têm o formato de ‘propri
 **adduser**
 
   <sub>Adiciona um usuário ou grupo no sistema. Por padrão, quando um novo usuário é adicionado, é criado um grupo com o mesmo nome do usuário. Opcionalmente o adduser também pode ser usado para adicionar um usuário a um grupo
-Será criado um diretório home com o nome do usuário.  e este receberá uma identificação. A identificação do usuário (UID) escolhida será a primeira disponível no sistema especificada de acordo com a faixa de UIDS de usuários permitidas no arquivo de configuração /etc/adduser.conf. Este é o arquivo que contém os padrões para a criação de novos usuários no sistema.</sub>
+Será criado um diretório home com o nome do usuário.  e este receberá uma identificação. A identificação do usuário (UID) escolhida será a primeira disponível no sistema especificada de acordo com a faixa de UIDS de usuários permitidas no arquivo de configuração /etc/adduser.conf. Este é o arquivo que contém os padrões para a criação de novos usuários no sistema.
 
 adduser [opções] [usuário/grupo]
 
@@ -40,18 +40,18 @@ Desativa a checagem de senhas ruins durante a adição do novo usuário. Por pad
 Cria um novo grupo ao invés de um novo usuário. A criação de grupos também pode ser feita pelo comando addgroup.
 
 -uid [num]
-Cria um novo usuário com a identificação [num] ao invés de procurar o próximo UID disponível.
+Cria um novo usuário com a identificação [num] ao invés de procurar o próximo UID disponível.</sub>
 
 **addgroup**
 
-  <sub>Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas do “adduser”.</sub>
+  <sub>Adiciona um novo grupo de usuários no sistema. As opções usadas são as mesmas do “adduser”.
 
-addgroup [usuário/grupo] [opções]
+addgroup [usuário/grupo] [opções]</sub>
 
 
 **passwd**
 
-  <sub>Modifica a parametros e senha de usuário. Um usuário somente pode alterar a senha de sua conta, mas o superusuário (root) pode alterar a senha de qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos de grupos também podem alterar a senha do grupo com este comando.</sub>
+  <sub>Modifica a parametros e senha de usuário. Um usuário somente pode alterar a senha de sua conta, mas o superusuário (root) pode alterar a senha de qualquer conta de usuário, inclusive a data de validade da conta, etc. Os donos de grupos também podem alterar a senha do grupo com este comando.
 
 passwd [usuário] [opções]
 
@@ -82,12 +82,12 @@ Número de dias antecedentes que o usuário receberá o alerta para mudar sua se
 Bloqueia a conta do usuário [nome]. Deve ser usada pelo root. O bloqueio da conta é feito acrescentando um caracter a senha para que não confira com a senha original.
 
 -u [nome]
-Desbloqueia a conta de um usuário bloqueada com a opção -l.
+Desbloqueia a conta de um usuário bloqueada com a opção -l.</sub>
 
 
 **gpasswd**
 
-  <sub>Modifica parametros e senha de grupo. Um usuário somente pode alterar a senha de seu grupo, mas o superusuário (root) pode alterar a senha de qualquer grupo de usuário, inclusive definir o administrador do grupo.</sub>
+  <sub>Modifica parametros e senha de grupo. Um usuário somente pode alterar a senha de seu grupo, mas o superusuário (root) pode alterar a senha de qualquer grupo de usuário, inclusive definir o administrador do grupo.
 
 gpasswd [opções] [usuario] [grupo]
 
@@ -105,11 +105,11 @@ Desativa o acesso do grupo usando o comando newgrp.
 Adiciona o usuário no grupo especificado.
 
 -d usuario grupo
-Apaga o usuário do gurpo especificado.
+Apaga o usuário do gurpo especificado.</sub>
 
 **newgrp**
 
-  <sub>Altera a identificação de grupo do usuário. Para retornar a identificação anterior, digite exit e tecle Enter. Para executar um comando com outra identificação de grupo de usuário, use o comando “sg”.</sub>
+  <sub>Altera a identificação de grupo do usuário. Para retornar a identificação anterior, digite exit e tecle Enter. Para executar um comando com outra identificação de grupo de usuário, use o comando “sg”.
 
 newgrp - [grupo]
 
@@ -118,32 +118,32 @@ Onde:
 Se usado, inicia um novo ambiente após o uso do comando newgrp (semelhante a um novo login no sistema), caso contrário, o ambiente atual do usuário é mantido.
 
 grupo
-Nome do grupo ou número do grupo que será incluído.
+Nome do grupo ou número do grupo que será incluído.</sub>
 
 
 **userdel**
-  <sub>Apaga um usuário do sistema. Quando é usado, este comando apaga todos os dados da conta especificado dos arquivos de contas do sistema.</sub>
+  <sub>Apaga um usuário do sistema. Quando é usado, este comando apaga todos os dados da conta especificado dos arquivos de contas do sistema.
 
 userdel [-r] [usuário]
 
 Onde:
 
 -r
-Apaga também o diretório HOME do usuário.
+Apaga também o diretório HOME do usuário.</sub>
 
 
 **groupdel**
 
-  Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados do grupo especificado dos arquivos de contas do sistema.</sub>
+  Apaga um grupo do sistema. Quando é usado, este comando apaga todos os dados do grupo especificado dos arquivos de contas do sistema.
 
 groupdel [grupo]
 
-Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado através do comando find.
+Tenha certeza que não existem arquivos/diretórios criados com o grupo apagado através do comando find.</sub>
 
 
 **lastlog**
 
-  <sub>Mostra o último login dos usuários cadastrados no sistema. É mostrado o nome usado no login, o terminal onde ocorreu a conexão e a hora da última conexão. Estes dados são obtidos através da pesquisa e formatação do arquivo /var/log/lastlog. Caso o usuário não tenha feito login, é mostrada a mensagem ** Never logged in.</sub>
+  <sub>Mostra o último login dos usuários cadastrados no sistema. É mostrado o nome usado no login, o terminal onde ocorreu a conexão e a hora da última conexão. Estes dados são obtidos através da pesquisa e formatação do arquivo /var/log/lastlog. Caso o usuário não tenha feito login, é mostrada a mensagem ** Never logged in.
 
 lastlog [opções]
 
@@ -156,11 +156,11 @@ Mostra somente os usuários que se conectaram ao sistema nos últimos [dias].
 Mostra somente os usuários que se conectaram antes de [dias].
 
 -u [nome]
-Mostra somente detalhes sobre o usuário [nome].
+Mostra somente detalhes sobre o usuário [nome].</sub>
 
 **last**
 
-  Mostra uma listagem de entrada e saída de usuários no sistema. São mostrados os seguintes campos na listagem:</sub>
+  Mostra uma listagem de entrada e saída de usuários no sistema. São mostrados os seguintes campos na listagem:
 
 Nome do usuário
 
@@ -174,14 +174,14 @@ Tempo (em Horas:Minutos) que esteve conectado ao sistema.
 
 Onde:
 
-opções, -n [num]
+opções, -n [num]</sub>
 
 
 **logname**
 
-  <sub>Mostra seu login (username).</sub>
+  <sub>Mostra seu login (username).
 
-logname
+logname</sub>
 
 
 **users**
